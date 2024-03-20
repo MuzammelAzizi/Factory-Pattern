@@ -4,7 +4,10 @@
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello, World!");
+            Console.WriteLine("Tell us the number of Car doors:");
+            var doorCount = int.Parse(Console.ReadLine());
+            var vehicle = VehicleFactory.GetVehicle(doorCount);
+            vehicle.Drive();
         }
     }
 }
